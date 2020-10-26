@@ -17,7 +17,7 @@ public class RootController {
 
     @GetMapping("/")
     public String root(Model model) {
-        model.addAttribute( "msg", "I love you!" );
+        model.addAttribute( "msg", "Happy Birthday!" );
         model.addAttribute( "wedding", numDaysSinceWedding() );
         model.addAttribute( "separated", numDaysSinceSeparated() );
         return "root";
